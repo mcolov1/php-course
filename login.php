@@ -65,12 +65,10 @@ if (isset($_POST['Login'])) {
         ];
         redirect('profile');
         } else {
-            echo "parolite ne suvpadat.";
+            echo "parolite ne fsuvpadat.";
         }
     }
 }
-
-
 ?>
 
 <html>

@@ -3,7 +3,6 @@ session_start();
 require_once 'config/db.php';
 require_once 'config/settings.php';
 require_once 'functions.php';
-// showArray($_SESSION);
 if(!isset($_SESSION['user'])) {
     redirect('login');
 }
@@ -155,7 +154,6 @@ if(isset($_POST['submit'])) {
     $errors = array_merge($errors, $errorsImage);
     }
     showArray($errors);
-    showArray($image);
     if (!count($errors)) {
         $sql = "UPDATE `".TABLE_USERS."`
                 SET 
